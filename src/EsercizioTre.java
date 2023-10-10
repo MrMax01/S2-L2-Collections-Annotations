@@ -17,11 +17,12 @@ public class EsercizioTre {
 
     public static void findFromValue (Map myMap, int value){
         Set<String> chiavi = myMap.keySet();
-        String keyResult="";
+        String keyResult;
         for (String chiave : chiavi) {
-          if(myMap.get(chiave)==value) keyResult= chiave;
+            if((int)myMap.get(chiave)==value) keyResult= chiave;
         //da risolvere un atitmo
+
         }
-        System.out.println(myMap.get(keyResult));
+       // System.out.println(myMap.get(keyResult));
     }
 }
